@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Nunito";
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+
+}
+
+h1,
+h2,
+h3,
+nav {
+    font-family: "Fjalla One";
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    background-color: #e4ae48;
+    color: white;
+    width: 40rem;
+    margin: auto;
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    flex-basis: 100%;
+    text-align: center;
+    color: #007f9a;
+}
+
+h3 {
+    font-size: 2rem;
+
+}
+
+/*********************header**************************/
+#hsect1 {
+    background-color: #007f9a;
+
+    padding: 2rem 0;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: white;
+}
+
+header nav a {
+
+    margin-left: 5rem;
+}
+
+header nav a:first-child {
+    background-color: white;
+    color: #007f9a;
+    padding: 0.2rem;
+}
+
+#hsect2 {
+    background-image: url(images/background.jpg);
+    text-align: center;
+    padding: 25rem 0;
+}
+
+header p {
+    background-color: white;
+    color: #007f9a;
+    width: 43rem;
+    margin: auto;
+}
+
+/*****************************main***********************/
+#msect1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+#msect1 article {
+    flex-basis: 23%;
+    background-color: #ededed;
+    text-align: center;
+}
+
+main i {
+    background-color: #e4ae48;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+main a {
+    color: white;
+    background-color: #007f9a;
+    width: 20rem;
+    display: block;
+    margin: auto;
+}
+
+span {
+    color: #e4ae48;
+}
+
+#msect2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#msect2 article img {
+    border: 0.2rem solid #007f9a;
+    margin-bottom: 5rem;
+}
+
+/********************footer****************/
+#fsect1 {
+    background-color: #007f9a;
+    background-image: url(images/path.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding: 2rem 0;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#fsect1 a {
+    color: white;
+}
+
+footer i {
+    color: white;
+    padding-left: 1rem;
+}
+
+#fsect2 {
+    text-align: center;
+    background-color: #444444;
+    padding: 1rem;
+}
+
+#fsect2 img {
+    width: 5rem;
+}
+
+#fsect2 p {
+    margin: 0;
+    color: white;
+}
+
+#fsect2 a {
+    color: #be5239;
+}
+
+/*************************tablete************************/
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    main.container {
+        max-width: 95%;
+        margin: auto;
+    }
+
+    header div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem;
+    }
+
+    #msect1 article {
+        flex-basis: 49%;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #msect2 article {
+        flex-basis: 48%;
+        text-align: center;
+    }
+}
+
+/*******************************************mobile********************/
+@media screen and (min-width:481px) and (max-width:767px) {
+    main.container {
+        max-width: 95%;
+        margin: auto;
+    }
+
+    header div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem;
+    }
+
+    #msect1 article {
+        flex-basis: 100%;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #msect2 article {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    #fsect1 div {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    #fsect1 i {
+        flex-basis: 100%;
+    }
+
+    #fsect1 a {
+        flex-basis: 100%;
+    }
+}
+
+/********************petite mobile*******************/
+@media screen and (max-width:480px) {
+
+    header div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+    header nav a {
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    #msect1 article {
+        flex-basis: 100%;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #msect2 article {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    #fsect1 div {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    #fsect1 i {
+        flex-basis: 100%;
+    }
+
+    #fsect1 a {
+        flex-basis: 100%;
+    }
+    #fsect1 div{
+        margin-bottom: 2rem;
+    }
+}
